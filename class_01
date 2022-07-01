@@ -17,3 +17,20 @@ Python —version
 
 마젠타 설치 명령어
 Pip install magenta
+
+
+
+----------------------------------------------------
+Step 1
+convert_dir_to_note_sequences 
+--input_dir=C:\Users\USER\Desktop\magenta_example\midi\arp 
+--output_file=C:\Users\USER\Desktop\magenta_example\tfrecord\tfrecord_1
+
+** 엔터치지 마시고 한번에 이어서 써주세요
+** 구분은 스페이스로
+** 경로명에 띄어쓰기가 있으신분은 경로를 “”로 묶어주세요.
+
+Step 2 
+polyphony_rnn_create_dataset --input=C:\Users\USER\Desktop\magenta_example\tfrecord\tfrecord_1 --output_dir=C:\Users\USER\Desktop\magenta_example\sequence_example --eval_ratio=0.0
+
+
