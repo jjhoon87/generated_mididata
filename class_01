@@ -32,4 +32,4 @@ Step 2
 polyphony_rnn_create_dataset --input=C:\Users\USER\Desktop\magenta_example\tfrecord\tfrecord_1 --output_dir=C:\Users\USER\Desktop\magenta_example\sequence_example --eval_ratio=0.0
 
 Step 3
-polyphony_rnn_train --run_dir=C:\Users\USER\Desktop\magenta_example\run1 --sequence_example_file="C:\Users\USER\Desktop\magenta_example\sequence_example\training_poly_tracks.tfrecord" –hparams=”batch_size=16,rnn_layer_sizes=[128]” –num_training_steps=1000
+polyphony_rnn_train --run_dir=C:\Users\USER\Desktop\magenta_example\run1 --sequence_example_file="C:\Users\USER\Desktop\magenta_example\sequence_example\training_poly_tracks.tfrecord" --hparams=”batch_size=16,rnn_layer_sizes=[64]” --num_training_steps=1000
