@@ -1,0 +1,19 @@
+1일차
+
+가상환경 설치한거 다보기
+Conda env list
+
+가상환경 새로 만들기
+(Base)에서
+Conda create -n <이름정하세요> python=3.6
+** 3.6에서 마젠타가 잘 설치되네요 **
+
+가상환경 들어가기
+Conda activate <이름정하세요>
+
+가상환경 들어가서 버전 확인하기
+Python —version
+** 위에 대시 2개임
+
+마젠타 설치 명령어
+Pip install magenta
