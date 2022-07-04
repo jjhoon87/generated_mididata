@@ -29,7 +29,7 @@ convert_dir_to_note_sequences --input_dir=C:\magenta_practice\train_data\arp2 --
 ** 경로명에 띄어쓰기가 있으신분은 경로를 “”로 묶어주세요.
 
 Step 2. Tfrecord 파일을 Sequence_example 파일로 변환하기
-polyphony_rnn_create_dataset --input=C:\Users\USER\Desktop\magenta_example\tfrecord\tfrecord_1 --output_dir=C:\Users\USER\Desktop\magenta_example\sequence_example --eval_ratio=0.0
+polyphony_rnn_create_dataset --input="C:\magenta_practice\tfrecord\tfrecord" --output_dir=C:\magenta_practice\seq_ex --eval_ratio=0.0
 
 Step 3. RNN 모델 학습하기
 polyphony_rnn_train --run_dir=C:\Users\USER\Desktop\magenta_example\run1 --sequence_example_file="C:\Users\USER\Desktop\magenta_example\sequence_example\training_poly_tracks.tfrecord" --hparams="batch_size=16,rnn_layer_sizes=[64]" --num_training_steps=1000
