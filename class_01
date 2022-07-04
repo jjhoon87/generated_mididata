@@ -35,4 +35,4 @@ Step 3. RNN 모델 학습하기
 polyphony_rnn_train --run_dir=C:\magenta_practice\run1 --sequence_example_file="C:\magenta_practice\seq_ex\training_poly_tracks.tfrecord" --hparams="batch_size=10,rnn_layer_sizes=[32]" --num_training_steps=1000
 
 Step 4. 학습한 모델에서 음악 
-polyphony_rnn_generate --run_dir=C:\Users\USER\Desktop\magenta_example\run1 --hparams="batch_size=16,rnn_layer_sizes=[64]" --output_dir=C:\Users\USER\Desktop\magenta_example\gen --num_outputs=100 --num_steps=128 --primer_melody="[60]"
+polyphony_rnn_generate --run_dir=C:\magenta_practice\run1 --hparams="batch_size=10,rnn_layer_sizes=[32]" --output_dir=C:\magenta_practice\gen --num_outputs=100 --num_steps=128 --primer_melody="[60]"
