@@ -11,3 +11,5 @@ melody_rnn_create_dataset --config=basic_rnn --input="Tfrecord 파일 위치" --
 Step 3. Melody_rnn 학습
 melody_rnn_train --config=basic_rnn --run_dir="학습모델 저장폴더" --sequence_example_file="sequence_example파일 위치" --hparams="batch_size=16,rnn_layer_sizes=[64,64]" --num_training_steps=10000
 
+Steo 4. Melody_rnn 생성
+melody_rnn_generate --config=basic_rnn --run_dir="학습모델 저장폴더" --hparams="batch_size=16,rnn_layer_sizes=[64,64]" --output_dir="멜로디 생성할 폴더" --num_output=100 --num_step=128 --primer_melody="[60]"
