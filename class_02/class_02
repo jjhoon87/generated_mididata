@@ -6,5 +6,5 @@ convert_dir_to_note_sequences --input_dir="미디파일이 있는 경로" --outp
 ** --output_file에 파일이름까지 지정해야 함
 
 Step 2. Melody_rnn을 위한 sequence_example 파일 생성
-melody_rnn_create_dataset --config="모델명" --input="Tfrecord 파일 위치" --output_dir="sequence_example 파일이 생성될 폴더" --eval_ratio=비율
+melody_rnn_create_dataset --config=basic_rnn --input="Tfrecord 파일 위치" --output_dir="sequence_example 파일이 생성될 폴더" --eval_ratio=비율
 
