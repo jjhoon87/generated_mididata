@@ -1,0 +1,4 @@
+Melody_RNN 학습
+
+Step 1. 미디파일을 Tfrecord 파일로 변환하기
+convert_dir_to_note_sequences --input_dir="미디파일이 있는 경로" --output_file="저장될 Tfrecord 파일의 위치"
