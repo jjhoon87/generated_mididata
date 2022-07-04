@@ -2,3 +2,9 @@ Melody_RNN 학습
 
 Step 1. 미디파일을 Tfrecord 파일로 변환하기
 convert_dir_to_note_sequences --input_dir="미디파일이 있는 경로" --output_file="저장될 Tfrecord 파일의 위치"
+
+** --output_file에 파일이름까지 지정해야 함
+
+Step 2. Melody_rnn을 위한 sequence_example 파일 생성
+melody_rnn_create_dataset --config="모델명" --input="Tfrecord 파일 위치" --output_dir="sequence_example 파일이 생성될 폴더" --eval_ratio=비율
+
