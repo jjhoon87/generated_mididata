@@ -8,3 +8,6 @@ convert_dir_to_note_sequences --input_dir="미디파일이 있는 경로" --outp
 Step 2. Melody_rnn을 위한 sequence_example 파일 생성
 melody_rnn_create_dataset --config=basic_rnn --input="Tfrecord 파일 위치" --output_dir="sequence_example 파일이 생성될 폴더" --eval_ratio=비율
 
+Step 3. Melody_rnn 학습
+melody_rnn_train --config=basic_rnn --run_dir="학습모델 저장폴더" --sequence_example_file="sequence_example파일 위치" --hparams="batch_size=16,rnn_layer_sizes=[64,64]" --num_training_steps=10000
+
