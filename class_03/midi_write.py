@@ -1,3 +1,4 @@
+!pip install midiutil
 import midiutil
 def write_midi(seq, bpm, path):
     mf = midiutil.MIDIFile(1, file_format=1)
@@ -15,3 +16,6 @@ def write_midi(seq, bpm, path):
         )
     with open(path, 'wb') as outf:
         mf.writeFile(outf)
+
+        
+#  write_midi(seq=note_list, bpm=90, path='output.mid')
