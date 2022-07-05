@@ -13,7 +13,7 @@ def write_midi(seq, bpm, path):
             channel,
             n['pitch'],
             n['start_time'],
-            n['duration_time'],
+            n['length'],
             n['velocity']
         )
     with open(path, 'wb') as outf:
